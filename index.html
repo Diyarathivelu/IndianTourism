@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Tourism</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawsome/css/all.min.css">
+
+    <!-- JS -->
+   
+    <script src="js/bootstrap.bundle.min.js"></script>
+ 
+ 
+
+  
+    <style>
+           *{
+            box-sizing: border-box;
+           }
+        body{
+            height:100%;
+            overflow-x:hidden;
+            overflow-y:scroll;
+           }
+            .navbar,footer{
+                background-color:#1d1160!important;
+                 font-size:14px;
+
+            }
+            .carousel img{
+                height:400px !important;
+                object-fit:fill;
+            }
+            .carousel-caption{
+                top:32%;
+            }
+            .overview{
+                background-color: #6A5ACD;
+                color:white;
+                
+                
+            }
+            .places,.places button{
+                font-size:12px;
+            }
+           .accordion-button{
+            font-size:14px;
+            --bs-accordion-btn-bg:#AFDBF5 !important;
+            --bs-accordion-active-bg:#AFDBF5 !important;
+            
+           }
+        .accordion-button:focus {
+            box-shadow: none;
+            outline: none;
+            }
+
+           .accordion-body{
+            font-size:13px;
+           }
+       
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                                <div class="container-sm">
+                                        <a class="navbar-brand py-2" href="#">Indian Tourism</a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarNav">
+                                            <ul class="navbar-nav ms-auto">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" href="#places">Places</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" href="#faq">FAQ</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" href="#login">Login</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link text-white" href="#register">Register</a>
+                                                        </li>
+                                            </ul>
+                                        </div>
+                                </div>
+    </nav>
+    <!-- Content -->
+     <div class="content-block">
+                <!-- carousel -->
+                 <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators visually-hidden">
+                                <button type="button "  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="1500">
+                                <img src="carouselimages/himalayas.jpg" class="d-block w-100 "  alt="...">
+                                <div class="carousel-caption ">
+                                 <h1>Indian Tourism</h1>
+                                    <p>Enjoy the vacation.</p>
+                                </div>
+                                </div>
+                                <div class="carousel-item "data-bs-interval="1500">
+                                <img src="carouselimages/green.jpg" class="d-block w-100 h-50" alt="...">
+                                <div class="carousel-caption ">
+                                    <h1>Indian Tourism</h1>
+                                    <p class="fw-bolder fs-10 text-capitalize">Explore the Indian Culture.</p>
+                                </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1500">
+                                <img src="carouselimages/kerala.jpg" class="d-block w-100 h-50" alt="...">
+                                <div class="carousel-caption ">
+                                      <h1>Indian Tourism</h1>
+                                    <p class="fw-bolder fs-10 text-capitalize" >At Resonabale prize</p>
+                                   
+                                    
+                                </div>
+                                </div>
+                            </div>
+                           <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                </div>
+               
+                 <!-- places -->
+                  <div class="places py-3 " id="places">
+                        <h5 class=" text-center">Places</h5>
+                            <div class="container d-flex justify-content-center">
+                                <div class="row">
+                                                <!-- Card 1 -->
+                                                <div class="col-md-4 py-1">
+                                                    <div class="card">
+                                                        <img src="images/kasicard.jfif" class="card-img-top" alt="Destination 1">
+                                                        <div class="card-body text-center">
+                                                            <h5 class="card-title ">Kasi</h5>
+                                                            <p class="card-text text-justify">Kasi is one of the oldest  inhabited cities in the world and holds immense cultural and religious significance in India.</p>
+                                                            <button class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#booknow"> Book now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Card 2 -->
+                                                <div class="col-md-4 py-1">
+                                                    <div class="card">
+                                                        <img src="images/mysore.jfif" class="card-img-top" alt="Destination 2">
+                                                        <div class="card-body text-center">
+                                                            <h5 class="card-title text-center">Mysore Palace</h5>
+                                                            <p class="card-text text-justify">Mysore Palace, also known as the Amba Vilas Palace, is a magnificent royal residence located in the city of Mysore in Karnataka</p>
+                                                            <button class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#booknow"> Book now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Card 3 -->
+                                                <div class="col-md-4 py-1">
+                                                    <div class="card">
+                                                        <img src="images/tanjore.jfif" class="card-img-top" alt="Destination 3">
+                                                        <div class="card-body text-center">
+                                                            <h5 class="card-title text-center">Thanjavur</h5>
+                                                            <p class="text-justify">Thanjavur is famous for its rich cultural heritage, especially its contribution to art, architecture, and music</p>
+                                                            <button class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#booknow"> Book now</button>              </div>
+                                                    </div>
+                                                </div>
+                                </div>
+                            </div>
+                  </div>
+                   <!-- section overview -->
+                 <div class="overview container-fluid d-flex align-items-between   justify-content-center ">
+                        <div class="d-flex container row text-center  py-4  ">
+                                <div class="col-sm-4  "><h6><i class="fa-solid fa-plane-circle-check me-2"></i>Amazing Destinations</h6></div>
+                            <div class="col-sm-4  "><h6><i class="fa-solid fa-tags me-2"></i>Flat 50% offer</h6></div>
+                            <div class="col-sm-4  "><h6><i class="fa-solid fa-people-group me-2"></i>1000 Customers</h6></div>
+                        </div>
+                 </div>
+                <!-- faq block -->
+               <div class="faq-block py-2">
+                <h5 class="text-center">FAQs</h5>
+                 <div class="faq container d-flex justify-content-center  py-2">
+                    
+                     <div class="accordion " style="width:90%" id="accordionExample">
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Are your tours suitable for solo travelers, families, or seniors?
+                            </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                            Absolutely! We design tours for a wide range of travelers. Whether you're a solo adventurer, a family with kids, or a senior traveler, we have suitable options. Each tour will mention its activity level and recommended age group. We also offer special interest tours and private arrangements for personalized experiences.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   Do you offer customized tour packages?
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes, we specialize in creating customized travel experiences. Whether you're looking for a romantic getaway, an adventure trip, a cultural tour, or a family holiday, we can tailor a package that suits your interests, budget, and schedule. Just share your preferences, and our travel consultants will create a personalized itinerary for you.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            How do I get updates or changes about my trip?
+
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+We keep you informed at every stage of your journey. Once you book a tour, you will receive confirmation and updates via email or WhatsApp. Any changes to the itinerary, timing, or other important details will be promptly communicated. You can also check your booking status and itinerary through our customer portal or by contacting our support team directly.
+
+                                </div>
+                                </div>
+                           </div>
+                 </div>
+                </div>
+               </div>
+
+     </div>
+     <!-- Footer -->
+     <footer class="bottom text-center py-2  text-white">@Indian Tourism</footer>
+</body>
+</html>
